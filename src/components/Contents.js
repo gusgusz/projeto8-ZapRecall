@@ -1,9 +1,11 @@
 import  React  from "react";
+import  ReactDOM  from "react-dom";
 
 
 export default function Contents() {
 
-    const [open, setOpen] = React.useState(true);
+    
+    
 
     const perguntas = [
         {pergunta: "O que é jsx?", resposta: "Uma extensão de linguagem do JavaScript"},
@@ -17,6 +19,17 @@ export default function Contents() {
         
     ];
 
+        function Content({pergunta = pergunta}){
+            const [open, setOpen] = React.useState(true);
+            return(
+                <div className="contents">
+                 {open ? (<div><h3>Pergunta </h3><img onClick={() => setOpen(!open)} src="./assets/img/Vector.png"></img></div>) 
+                     : (<div className="open"><h4>{pergunta.pergunta}</h4><img src="./assets/img/resposta.png"></img></div>)}
+                 
+                 </div>
+
+            );
+        }
  
     return(
          <>
@@ -24,12 +37,12 @@ export default function Contents() {
             <img src="assets/img/zapLogo.png"></img>
             <h2>ZapRecall</h2>
          </div>
-        <div className="contents">
-       {perguntas.map(({...pergunta}, index) => <>{open ? (<div><h3>Pergunta {index +1}</h3><img onClick={() => setOpen(!open)} src="./assets/img/Vector.png"></img></div>) 
-            : (<div className="open"><h4>{pergunta.pergunta}</h4><img src="./assets/img/resposta.png"></img></div>)}</>
-        )}
+        
+        {perguntas.map((value) => (<Content pergunta={value}/>))}
+        
+      
             
-        </div>
+        
         <div className="done">
         0/4 CONCLUÍDOS
         </div>
