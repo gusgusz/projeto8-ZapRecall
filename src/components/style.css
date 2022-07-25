@@ -35,6 +35,14 @@ h3{
     text-align: left;
 
 }
+h4{
+    font-family: Recursive;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+
+}
 .root {
   
 
@@ -87,11 +95,11 @@ h3{
     height: 60px;
     margin: 0 28px 0 0;
 }
-.content{
+.contents{
     margin-bottom: 40px;
     
 }
-.content div{
+.contents div{
     display: flex;
     width: 120%;
     height: 65px;
@@ -103,9 +111,19 @@ h3{
     margin-bottom: 30px;
     
 }
-.content div > img{
+.contents div > img{
     height: 23px;
     width: 20px;
+}
+.contents .open{
+    background-color: #FFFFD4;
+    height: 130px;
+    align-items: unset;
+}
+.contents .open > img{
+    position: relative;
+    top: 100px;
+    justify-content: none;
 }
 .done {
     font-family: Recursive;
