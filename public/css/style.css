@@ -1,0 +1,125 @@
+*{
+    font-family: 'Righteous', cursive;
+    box-sizing: border-box;
+
+}
+body {
+    background-color: #FB6B6B;
+    font-family: 'Righteous', cursive;
+    
+
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+  }
+
+h2{
+    color: #ffffff;
+    font-family: Righteous;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: -0.012em;
+    text-align: center;
+
+}
+h3{
+    font-family: Recursive;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: left;
+
+}
+.root {
+  
+
+    background-color: #FB6B6B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  overflow-block: scroll;
+  
+    
+}
+.initial {
+    margin: 120px 0 120px 0;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+.initial img{
+    width: 136px;
+    height: 161px;
+    margin: 25px 0;
+    
+}
+
+.initial button{
+    color: #D70900;
+    width: 246px;
+    height: 56px;
+    margin-top: 25px;
+    border-radius: 4px;
+    border: 0.5px solid #D70900;
+    background-color: #ffffff;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+
+}
+.navbar > img{
+    width: 52px;
+    height: 60px;
+    margin: 0 28px 0 0;
+}
+.content{
+    padding-bottom: 30px;
+    
+}
+.content div{
+    display: flex;
+    width: 120%;
+    height: 65px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0 9px;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+}
+.content div > img{
+    height: 23px;
+    width: 20px;
+}
+.done {
+    font-family: Recursive;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
